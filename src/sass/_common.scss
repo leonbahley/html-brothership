@@ -1,1 +1,64 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+:root {
+    --primary-color-of-text:white;
+    --secondary-color-of-text:black;
+    --primary-background-color:#F6F7F7;
+    --secondary-background-color:#06071B;
+    --menu-background-color:#07081D;
+    --buttons-gradient:linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+    --header-gradient:linear-gradient(90.03deg, rgba(0, 197, 235, 0.3) -1.97%, rgba(181, 68, 254, 0.3) 89.43%);
+    --hover-border-color:linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+}
+
+
+
+body {
+font-family: 'Inter', sans-serif;
+color:var(--primary-color-of-text);
+background-color: var(--primary-background-color);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width:100%;
+  height: auto;
+}
+.section {
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+
+.container {
+    padding-left: 20px;
+    padding-right:20px;
+    margin-left: auto;
+    margin-right:auto;
+    max-width:320px;
+}
+
+
+
+// fonts : Inter 700 500 400
