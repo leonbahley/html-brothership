@@ -1,16 +1,52 @@
-.container--box {
-    text-align: center;
-    padding: 0;
-
+.footer {
     background-color: #06071B;
 }
 
+.footer__limit {
+    border-bottom: 1px solid var(--primary-color-of-text);
+}
+
+.container--box {
+    text-align: center;
+    margin-top: 40px;
+    padding: 0;
+}
+
 .footer__title {
-    margin: 40px 0;
+    margin-bottom: 40px;
+    padding-top: 40px;
 
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
+}
+
+.footer__form ::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    
+    color: #939EAC;
+}
+
+.footer__name {
+    margin-bottom: 20px;
+    padding: 12px;
+
+    border-radius: 5px;
+}
+
+.footer__mail {
+    margin-bottom: 20px;
+    padding: 12px;
+
+    border-radius: 5px;
+}
+
+.footer__message {
+    padding: 12px;
+    
+    border-radius: 5px;
 }
 
 .footer__button {
@@ -23,35 +59,56 @@
     line-height: 1.19;
 
     color: var(--primary-color-of-text);
-    background-image: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+    background-image: var(--buttons-gradient);
     
     border: none;
     border-radius: 5px;
 }
 
 .footer__title-mini {
+    margin-bottom: 20px;
+
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.2px;
+    line-height: 1.2;
 }
 
 .footer__text {
-    margin-top: 20px;
+    margin: 0 20px 40px 20px;
 
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.21px;
+    line-height: 1.21;
 }
 
 .footer_social {
     display: flex;
     justify-content: center;
+
     margin: 0;
+    margin-bottom: 40px;
     padding: 0;
 }
 
 .footer__list:not(:first-child) {
     margin-left: 14px;
+}
+
+.footer__adress {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 40px;
+}
+
+.footer__contact {
+    font-style: normal;
+
+    color: var(--primary-color-of-text);
+
+    &:not(:last-child) {
+        margin-bottom: 12px;
+    }
 }
 
 .footer__copyright {
@@ -60,6 +117,6 @@
     padding-bottom: 22px;
     padding-left: 24px;
 
-    border-top: 1px solid var(--primary-color-of-text);
+    border-bottom: none;
 }
 
