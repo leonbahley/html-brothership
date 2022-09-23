@@ -102,6 +102,10 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+    }
 }
 
 .footer__text {
@@ -110,6 +114,11 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.21;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 1.18;
+    }
 }
 
 .footer_social {
@@ -143,6 +152,18 @@
     }
 }
 
+.footer__contact--phone {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.footer__contact--mail {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+}
+
 .footer__copyright {
     text-align: left;
     padding-top: 22px;
@@ -150,6 +171,10 @@
     padding-left: 24px;
 
     border-bottom: none;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
 }
 
 
