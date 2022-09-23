@@ -1,7 +1,23 @@
+.bg-color {
+    text-align: center;
+    background-color: var(--secondary-background-color);
+}
+
 .footer__title {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
 
     color: #FFFFFF;
+}
+
+.footer_social {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__list:not(:first-child) {
+    margin-left: 14px;
 }
