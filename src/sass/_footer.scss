@@ -2,43 +2,40 @@
     background-color: #06071B;
 }
 
-.container--box {
+.contacts__title {
     text-align: center;
-    margin-top: 40px;
-    padding: 0;
-
-    @media screen and (min-width: 768px) {
-        margin-top: 74px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        margin-top: 80px;
-    }
-}
-
-.footer__title {
-    margin-bottom: 40px;
-    padding-top: 40px;
 
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
 
     @media screen and (min-width: 768px) {
-        margin-bottom: 38px;
-        padding-top: 74px;
-
         font-size: 24px;
         line-height: 1.2;
     }
 
     @media screen and (min-width: 1280px) {
-        margin-bottom: 80px;
-        padding-top: 80px;
+
     }
 }
 
-.footer__form ::placeholder {
+.container--box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1280px) {
+    }
+}
+
+.form {
+    margin: 40px auto;
+}
+
+.form ::placeholder {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.21;
@@ -46,27 +43,28 @@
     color: #939EAC;
 }
 
-.footer__name {
-    margin-bottom: 20px;
+.form__name {
     padding: 12px;
 
+    border: none;
     border-radius: 5px;
 }
 
-.footer__mail {
-    margin-bottom: 20px;
+.form__mail {
     padding: 12px;
 
+    border: none;
     border-radius: 5px;
 }
 
-.footer__message {
+.form__message {
     resize: none;
 
     padding: 12px;
 
     height: 220px;
     
+    border: none;
     border-radius: 5px;
 
     @media screen and (min-width: 768px) {
@@ -75,10 +73,7 @@
     }
 }
 
-.footer__button {
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 40px;
+.form__button {
     margin-left: auto;
     margin-right: auto;
     padding: 12px 59px;
@@ -94,7 +89,7 @@
     border-radius: 5px;
 }
 
-.footer__title-mini {
+.contacts__title-mini {
     margin-bottom: 20px;
 
     font-weight: 500;
@@ -106,7 +101,7 @@
     }
 }
 
-.footer__text {
+.contacts__text {
     margin: 0 20px 40px 20px;
 
     font-weight: 500;
@@ -119,7 +114,7 @@
     }
 }
 
-.footer_social {
+.contacts_social {
     display: flex;
     justify-content: center;
 
@@ -128,18 +123,16 @@
     padding: 0;
 }
 
-.footer__list:not(:first-child) {
+.contacts__list:not(:first-child) {
     margin-left: 14px;
 }
 
-.footer__adress {
+.contacts__adress {
     display: flex;
     flex-direction: column;
-
-    margin-bottom: 40px;
 }
 
-.footer__contact {
+.contacts__link {
     text-decoration: none;
     font-style: normal;
 
@@ -150,13 +143,13 @@
     }
 }
 
-.footer__contact--phone {
+.contacts--phone {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
 }
 
-.footer__contact--mail {
+.contacts--mail {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.21;
