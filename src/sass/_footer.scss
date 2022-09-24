@@ -1,9 +1,5 @@
-.footer {
+.contacts {
     background-color: #06071B;
-}
-
-.footer__limit {
-    border-bottom: 1px solid var(--primary-color-of-text);
 }
 
 .container--box {
@@ -68,6 +64,8 @@
     resize: none;
 
     padding: 12px;
+
+    height: 220px;
     
     border-radius: 5px;
 
@@ -162,6 +160,12 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.21;
+}
+
+.footer {
+    border-top: 1px solid var(--primary-color-of-text);
+
+    background-color: #06071B;
 }
 
 .footer__copyright {
