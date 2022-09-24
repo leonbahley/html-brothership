@@ -5,17 +5,21 @@
 .contacts__title {
     text-align: center;
 
+    padding-top: 40px;
+
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
 
     @media screen and (min-width: 768px) {
+        padding-top: 74px;
+
         font-size: 24px;
         line-height: 1.2;
     }
 
     @media screen and (min-width: 1280px) {
-
+        padding-top: 80px;
     }
 }
 
@@ -24,15 +28,29 @@
     display: flex;
     flex-direction: column;
 
+    margin-top: 40px;
+    padding-bottom: 40px;
+
     @media screen and (min-width: 768px) {
+        margin-top: 38px;
+        padding-bottom: 147px;
     }
 
     @media screen and (min-width: 1280px) {
+        margin-top: 80px;
+        padding-bottom: 139px;
     }
 }
 
 .form {
-    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    gap: 20px;
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 0;
+    }
 }
 
 .form ::placeholder {
@@ -71,6 +89,10 @@
         width: 704px;
         height: 162;
     }
+
+    @media screen and (min-width: 1280px) {
+        width: 608px;
+    }
 }
 
 .form__button {
@@ -102,15 +124,23 @@
 }
 
 .contacts__text {
-    margin: 0 20px 40px 20px;
-
+    margin-bottom: 40px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.21;
 
     @media screen and (min-width: 768px) {
+        width: 500px;
+        height: 38;
+
         font-size: 16px;
         line-height: 1.18;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 20px;
     }
 }
 
@@ -176,7 +206,5 @@
 
 
 @media screen and (min-width: 768px) {
-    br {
-        display: none;
-    }
+    br { display: none; }
 }
