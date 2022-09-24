@@ -1,0 +1,96 @@
+.header {
+  background-color: #06071b;
+  background-image: linear-gradient(
+    90.03deg,
+    rgba(0, 197, 235, 0.3) -1.97%,
+    rgba(181, 68, 254, 0.3) 89.43%
+  );
+  width: 100vw;
+  position: absolute;
+  top: 20;
+  left: 0;
+  z-index: 1;
+  padding: 14px 0;
+  &__icon {
+    width: 24px;
+    height: 14px;
+    position: absolute;
+  }
+  &__menu {
+    border: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    position: absolute;
+    top: 24;
+    right: 40;
+  }
+}
+.logo {
+  font-size: 28px;
+  line-height: calc(34 / 28);
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  background-color: #06071b;
+  background-image: url(../images/hero/iphone-mob.png);
+  position: relative;
+  height: 568px;
+  &__title {
+    margin-top: 12px;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
+  &__list {
+    list-style: none;
+    padding-left: 22px;
+    margin-bottom: 40px;
+  }
+  &__item {
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    margin-bottom: 16px;
+    position: relative;
+  }
+}
+
+.hero__item::before {
+  content: '';
+  background-image: url(../images/icon/dashicons_arrow-right-alt.svg);
+  position: absolute;
+  z-index: 1;
+  top: 2;
+  left: -17.5;
+  width: 7.2px;
+  height: 12.6px;
+  fill: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wrapper {
+  padding-top: 142px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.page-title {
+  font-size: 24px;
+  line-height: calc(29 / 24);
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.hero-button {
+  width: 200px;
+  height: 42px;
+  background-image: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+}
