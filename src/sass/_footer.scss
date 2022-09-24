@@ -47,9 +47,15 @@
 .form {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-bottom: 40px;
     gap: 20px;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 38px;
+        padding-bottom: 147px;
+        justify-content: space-between;
+    }
 
     @media screen and (min-width: 1280px) {
         margin-bottom: 0;
@@ -236,6 +242,33 @@
 
 .contacts__list:not(:first-child) {
     margin-left: 14px;
+}
+
+.social-icon {
+    border-radius: 50%;
+
+    background-image: var(--buttons-gradient);
+
+    @media screen and (min-width: 1280px) {
+        justify-content: left;
+    }
+}
+
+.social-icon__main {
+    transition: 400ms;
+  
+    .socials-link:hover .social-icon & {
+      opacity: 0;
+    }
+}
+  
+.social-icon__hover {
+    opacity: 0;
+    transition: 400ms;
+  
+    .socials-link:hover .social-icon & {
+      opacity: 1;
+    }
 }
 
 .contacts__adress {
