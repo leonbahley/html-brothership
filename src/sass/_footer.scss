@@ -53,7 +53,6 @@
 
     @media screen and (min-width: 768px) {
         margin-top: 38px;
-        padding-bottom: 147px;
         justify-content: space-between;
     }
 
@@ -208,9 +207,15 @@
 
 .contacts__text {
     margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.21;
+
+    width: 280px;
+    height: 51px;
 
     @media screen and (min-width: 768px) {
         width: 500px;
@@ -256,18 +261,22 @@
 
 .social-icon__main {
     transition: 400ms;
-  
-    .socials-link:hover .social-icon & {
-      opacity: 0;
+
+    @media screen and (min-width: 1280px) {
+        .socials-link:hover .social-icon & {
+            opacity: 0;
+        }
     }
 }
   
 .social-icon__hover {
     opacity: 0;
     transition: 400ms;
-  
-    .socials-link:hover .social-icon & {
-      opacity: 1;
+
+    @media screen and (min-width: 1280px) {
+        .socials-link:hover .social-icon & {
+            opacity: 1;
+        }
     }
 }
 
@@ -305,19 +314,20 @@
     background-color: #06071B;
 }
 
-.footer__copyright {
-    text-align: left;
+.footer__text {
     padding-top: 22px;
     padding-bottom: 22px;
-    padding-left: 24px;
-
-    border-bottom: none;
 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.21;
 }
 
+.container--footer {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        max-width: 320px;
+    }
+}
 
 @media screen and (min-width: 768px) {
     br { display: none; }
