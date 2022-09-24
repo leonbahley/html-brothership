@@ -17,6 +17,11 @@
     text-align: center;
     margin-bottom: 40px;
     color: var(--secondary-color-of-text);
+    @media screen and (min-width: 1280px) {
+      max-width: 886px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 .team__name {
@@ -160,15 +165,20 @@
 @media screen and (min-width: 1280px) {
   .team {
     max-width: 1280px;
-    background-image: url('../images/team/bkg-desk.png');
-    background-position: center;
+    background-image: url('../images/team/bkg-desk1.png'),
+      url('../images/team/bkg-desk2.png');
+    background-position: top calc(-50%) right calc(50% - 369px),
+      top calc(-30%) left;
 
     @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       max-width: 1280px;
-      background-image: url('../images/team/bkg-desk@2x.png');
-      background-position: center;
+      background-size: 540px, 867px;
+      background-image: url('../images/team/bkg-desk1@2x.png'),
+        url('../images/team/bkg-desk2@2x.png');
+      background-position: top calc(-50%) right calc(50% - 369px),
+        top calc(-30%) left;
     }
   }
 }
