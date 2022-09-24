@@ -39,12 +39,15 @@
     @media screen and (min-width: 1280px) {
         margin-top: 80px;
         padding-bottom: 139px;
+
+        flex-direction: row-reverse;
     }
 }
 
 .form {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-bottom: 40px;
     gap: 20px;
 
@@ -66,6 +69,14 @@
 
     border: none;
     border-radius: 5px;
+
+    @media screen and (min-width: 768px) {
+        width: 336px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 288px;
+    }
 }
 
 .form__mail {
@@ -73,6 +84,14 @@
 
     border: none;
     border-radius: 5px;
+
+    @media screen and (min-width: 768px) {
+        width: 336px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 288px;
+    }
 }
 
 .form__message {
@@ -109,6 +128,12 @@
     
     border: none;
     border-radius: 5px;
+}
+
+.contacts--box {
+    @media screen and (min-width: 1280px) {
+        text-align: left;
+    }
 }
 
 .contacts__title-mini {
@@ -151,6 +176,10 @@
     margin: 0;
     margin-bottom: 40px;
     padding: 0;
+
+    @media screen and (min-width: 1280px) {
+        justify-content: left;
+    }
 }
 
 .contacts__list:not(:first-child) {
