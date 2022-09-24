@@ -75,6 +75,9 @@
 }
 
 .team__list {
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -122,63 +125,45 @@
     padding-bottom: 0;
   }
 }
-
 @media screen and (max-width: 767px) {
   .team {
-    margin: 0 auto;
-    max-width: 320px;
-    background-image: url('../images/team/bkg-mob-1.png'),
-      url('../images/team/bkg-mob-2.png');
-    background-position: top center, center;
-
-    @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+    background-size: 480px;
+    background-image: url('../images/team/bkg-mob-top.png'),
+      url('../images/team/bkg-mob-bottom.png');
+    background-position: center top calc(-50%), center;
+    @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      max-width: 320px;
-      background-image: url('../images/team/bkg-mob-1@2x.png'),
-        url('../images/team/bkg-mob-2@2x.png');
-      background-position: top center, center;
+      background-image: url('../images/team/bkg-mob-top@2x.png'),
+        url('../images/team/bkg-mob-bottom@2x.png');
     }
   }
 }
-
 @media screen and (min-width: 768px) {
   .team {
-    max-width: 768px;
-    background-image: url('../images/team/bkg-tab-01.png'),
-      url('../images/team/bkg-tab-02.png');
-    background-position: top right calc(50% - 210px),
-      center right calc(50% - 210px);
-
-    @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    background-size: 768px;
+    background-image: url('../images/team/bkg-tab-top.png'),
+      url('../images/team/bkg-tab-bottom.png');
+    background-position: center top calc(-400%), center;
+    @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      max-width: 768px;
-      background-image: url('../images/team/bkg-tab-01@2x.png'),
-        url('../images/team/bkg-tab-02@2x.png');
-      background-position: top right calc(50% - 210px),
-        center right calc(50% - 210px);
+      background-image: url('../images/team/bkg-tab-top@2x.png'),
+        url('../images/team/bkg-tab-bottom@2x.png');
     }
   }
 }
-
 @media screen and (min-width: 1280px) {
   .team {
-    max-width: 1280px;
-    background-image: url('../images/team/bkg-desk1.png'),
-      url('../images/team/bkg-desk2.png');
-    background-position: top calc(-50%) right calc(50% - 369px),
-      top calc(-30%) left;
-
-    @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+    background-size: 1280px;
+    background-image: url('../images/team/bkg-desk-right.png'),
+      url('../images/team/bkg-desk-left.png');
+    background-position: center top calc(100%), center top calc(110%);
+    @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      max-width: 1280px;
-      background-size: 540px, 867px;
-      background-image: url('../images/team/bkg-desk1@2x.png'),
-        url('../images/team/bkg-desk2@2x.png');
-      background-position: top calc(-50%) right calc(50% - 369px),
-        top calc(-30%) left;
+      background-image: url('../images/team/bkg-desk-right@2x.png'),
+        url('../images/team/bkg-desk-left@2x.png');
     }
   }
 }
