@@ -1,28 +1,45 @@
-<section class="video">
+<section class="video section">
  <div class="container">
-    <h2>
-
+    <h2 class="video__title">
+      WATCH THE VIDEO
     </h2>
-    <p>
-
-    </p>
+    <h3 class="video__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla
+ fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. 
+Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.
+    </h3>
     <div class="video__svg-wrapper">
+     <svg class="video__icons">
+      <use href="./images/icon/sprite.svg#icon-apple">
 
+      </use>
+     </svg>
+     <svg class="video__icons">
+      <use href="./images/icon/sprite.svg#icon-android">
+      </use>
+     </svg>
     </div>
-    <img 
-    
+     <div class="video__picture-wrapper">
+     <picture class="video__picture">
+    <source 
     srcset="
-    ./images/video/telephone_image_501.png 501w,
-    ./images/video/telephone_image_1002.png 1002w,
-    ./images/video/telephone_image_tab_400.png 400w,
-    ./images/video/telephone_image_tab_800.png 800w,
-    ./images/video/telephone_image_mob_279.png 279w
-    ./images/video/telephone_image_mob_558.png 558w"
-    sizes="(min-width:1280px) 501px, (min-width:768px) 400px, (min-width:320px) 279px, 100vw" 
-    src="./images/video/telephone_image_501.png"
-    alt=""
-    width="501"
-    height="261">
-    
+    ./images/video/telephone_image_mob_279.png 1x,
+    ./images/video/telephone_image_mob_558.png 2x"
+    media="(max-width: 767px)"/>
+    <source 
+    srcset="
+    ./images/video/telephone_image_501.png 1x,
+    ./images/video/telephone_image_1002.png 2x"
+    media="(min-width: 1280px)"/>
+    <source 
+    srcset="
+    ./images/video/telephone_image_tab_400.png 1x,
+    ./images/video/telephone_image_tab_800.png 2x"
+    media="(min-width: 768px)"/>
+    <img 
+    src= "./images/video/telephone_image_501.png"
+    alt= "telephone"/>
+   </picture>
+  </div>
  </div>
 </section>
