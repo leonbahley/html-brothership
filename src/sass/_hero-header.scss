@@ -5,7 +5,7 @@
     rgba(0, 197, 235, 0.3) -1.97%,
     rgba(181, 68, 254, 0.3) 89.43%
   );
-  width: 100vw;
+  min-width: 100vw;
   position: absolute;
   top: 20;
   left: 0;
@@ -34,9 +34,10 @@
 }
 
 .hero {
+  width: 100%;
   background-color: #06071b;
   position: relative;
-  height: 568px;
+  min-height: 568px;
   &__title {
     margin-top: 12px;
     font-size: 18px;
@@ -46,11 +47,13 @@
     list-style: none;
     padding-left: 22px;
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
   &__item {
     font-size: 12px;
     line-height: calc(15 / 12);
-    margin-bottom: 16px;
     position: relative;
   }
 }
@@ -70,9 +73,9 @@
 }
 
 .wrapper {
-  padding-top: 142px;
-  padding-left: 20px;
-  padding-right: 20px;
+  position: absolute;
+  top: 182px;
+  z-index: 5;
 }
 
 .page-title {
@@ -93,8 +96,40 @@
   line-height: 19px;
   color: #fff;
 }
+.background {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  max-width: 422px;
+  height: 456px;
+  top: 94;
+  background-color: rgba(0, 197, 235, 0.3);
+  overflow: hidden;
+}
 
 .hero__base {
-  width: 32px;
-  height: 36px;
+  position: absolute;
+  bottom: 44;
+  right: 2;
+  z-index: 2;
+  width: 144.56px;
+  height: 70.8px;
+  transform: matrix(0.51, -0.86, -0.86, -0.51, 0, 0);
+}
+
+.hero__grade {
+  position: absolute;
+  min-width: 498.19px;
+  height: 51.93px;
+  z-index: 2;
+  transform: rotate(-59.04deg);
+  top: 189;
+  right: -65;
+}
+
+.hero__phone {
+  position: absolute;
+  z-index: 3;
+  width: 395px;
+  height: 430px;
 }
