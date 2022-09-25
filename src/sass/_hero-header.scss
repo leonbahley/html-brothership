@@ -29,13 +29,12 @@
 .logo {
   font-size: 28px;
   line-height: calc(34 / 28);
-  color: #fff;
+  color: var(--primary-color-of-text);
   text-decoration: none;
 }
 
 .hero {
   background-color: #06071b;
-  background-image: url(../images/hero/iphone-mob.png);
   position: relative;
   height: 568px;
   &__title {
@@ -93,4 +92,9 @@
   font-size: 16px;
   line-height: 19px;
   color: #fff;
+}
+
+.hero__base {
+  width: 32px;
+  height: 36px;
 }
