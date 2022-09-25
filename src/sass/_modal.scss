@@ -224,6 +224,10 @@
     width: 28px;
     height: 28px;
   }
+  .download-item:hover,
+  .download-item:focus {
+    z-index: 0;
+  }
 }
 .download-free:checked ~ .download-wrapper .download-free-label .download-item {
   z-index: 0;
