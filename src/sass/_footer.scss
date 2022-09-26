@@ -1,5 +1,65 @@
 .contacts {
+    position: relative;
     background-color: #06071B;
+}
+
+.bg-top-right {
+    position: absolute;
+    width: 172px;
+    height: 300px;
+    background: rgba(0, 197, 235, 0.3);
+    filter: blur(51.5px);
+    transform: matrix(0.74, -0.63, -0.73, -0.74, 0, 0);
+
+    top: 8%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+.bg-top-left {
+    position: absolute;
+    width: 198px;
+    height: 307px;
+
+    background: rgba(125, 85, 255, 0.3);
+    filter: blur(51.5px);
+    transform: matrix(0.9, 0.48, -0.41, 0.89, 0, 0);
+
+    top: 10%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.bg-bottom-right {
+    position: absolute;
+    width: 180px;
+    height: 35px;
+
+    background: rgba(0, 197, 235, 0.4);
+    filter: blur(51.5px);
+    transform: rotate(-149.52deg);
+
+    top: 90%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.bg-bottom-left {
+    position: absolute;
+    width: 110px;
+    height: 35px;
+
+    background: rgba(125, 85, 255, 0.4);
+    filter: blur(51.5px);
+    transform: rotate(-149.52deg);
+
+    top: 97%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
 }
 
 .contacts__title {
@@ -50,6 +110,8 @@
     margin-bottom: 40px;
     gap: 20px;
     justify-content: center;
+
+    z-index: 10;
 
     @media screen and (min-width: 768px) {
         margin-top: 38px;
