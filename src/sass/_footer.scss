@@ -4,9 +4,11 @@
     background-color: #06071B;
 }
 
-.bg-top-left {
+.gradient {
     position: absolute;
-    
+}
+
+.gradient__top-left {
     width: 198px;
     height: 307px;
 
@@ -25,18 +27,22 @@
 
         transform: matrix(0.11, 1.01, -0.96, 0.2, 0, 0);
 
-        top: -2%;
-        right: 10%;
-        transform: translate(-50%, -50%);
+        top: -3%;
+        right: 47%;
     }
 
     @media screen and (min-width: 1280px) {
+        width: 297px;
+        height: 458px;
 
+        transform: matrix(0.22, 1.02, -0.9, 0.34, 0, 0);
+
+        top: 22%;
+        right: 25%;
     }
 }
 
-.bg-top-right {
-    position: absolute;
+.gradient__top-right {
     width: 172px;
     height: 300px;
     background: rgba(0, 197, 235, 0.3);
@@ -52,21 +58,24 @@
         width: 291px;
         height: 528px;
 
-        filter: blur(51.5px);
         transform: matrix(-0.03, 1, 0.99, -0.09, 0, 0);
 
         top: 0%;
         left: 48%;
-        transform: translate(-50%, -50%);
     }
 
     @media screen and (min-width: 1280px) {
+        width: 230px;
+        height: 443px;
 
+        transform: matrix(0.06, 1.03, 0.94, -0.25, 0, 0);
+
+        top: 16%;
+        left: 70%;
     }
 }
 
-.bg-bottom-left {
-    position: absolute;
+.gradient__bottom-left {
     width: 180px;
     height: 35px;
 
@@ -80,23 +89,25 @@
     z-index: 5;
 
     @media screen and (min-width: 768px) {
-        width: 333px;
-        height: 542px;
+        width: 213px;
+        height: 42px;
+        
+        transform: rotate(-180deg);
 
-        transform: matrix(0.11, 1.01, -0.96, 0.2, 0, 0);
-
-        top: -2%;
-        right: 50%;
-        transform: translate(-50%, -50%);
+        top: 55%;
+        right: 44%;
     }
 
     @media screen and (min-width: 1280px) {
+        background: rgba(0, 197, 235, 0.3);        
+        transform: matrix(-1, 0, 0, 1, 0, 0);
 
+        top: 17%;
+        right: 79%;
     }
 }
 
-.bg-bottom-right {
-    position: absolute;
+.gradient__bottom-right {
     width: 110px;
     height: 35px;
 
@@ -110,19 +121,21 @@
     z-index: 6;
 
     @media screen and (min-width: 768px) {
-        width: 333px;
-        height: 542px;
+        width: 130px;
+        height: 42px;
 
-        filter: blur(51.5px);
-        transform: matrix(0.11, 1.01, -0.96, 0.2, 0, 0);
+        transform: rotate(-180deg);
 
-        top: -2%;
-        left: 10%;
-        transform: translate(-50%, -50%);
+        top: 61%;
+        left: 50%;
     }
 
     @media screen and (min-width: 1280px) {
+        background: rgba(125, 85, 255, 0.3);
+        transform: rotate(-180deg);
 
+        top: 12%;
+        left: 17%;
     }
 }
 
