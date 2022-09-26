@@ -126,10 +126,12 @@
 }
 @media screen and (max-width: 767px) {
   .team {
+    background-position: center -30%, center 300%;
     background-size: 480px;
+
     background-image: url('../images/team/bkg-mob-top.png'),
       url('../images/team/bkg-mob-bottom.png');
-    background-position: center top calc(-50%), center;
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -140,10 +142,10 @@
 }
 @media screen and (min-width: 768px) {
   .team {
-    background-size: 768px;
+    background-position: calc(50% + 121px) -50%, calc(50% + 121px) 80%;
+    background-size: 525px;
     background-image: url('../images/team/bkg-tab-top.png'),
       url('../images/team/bkg-tab-bottom.png');
-    background-position: center top calc(-400%), center;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -154,10 +156,10 @@
 }
 @media screen and (min-width: 1280px) {
   .team {
-    background-size: 1280px;
+    background-size: 625px;
     background-image: url('../images/team/bkg-desk-right.png'),
       url('../images/team/bkg-desk-left.png');
-    background-position: center top calc(100%), center top calc(110%);
+    background-position: calc(50% + 330px) 170%, calc(50% - 300px) 80%;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
