@@ -4,15 +4,13 @@
     background-color: #06071B;
 }
 
-.gradient {
-    position: absolute;
-}
-
 .gradient__top-left {
+    position: absolute;
+
     width: 198px;
     height: 307px;
 
-    background: rgba(125, 85, 255, 0.3);
+    background-color: rgba(125, 85, 255, 0.3);
     filter: blur(51.5px);
     transform: matrix(0.9, 0.48, -0.41, 0.89, 0, 0);
 
@@ -43,9 +41,12 @@
 }
 
 .gradient__top-right {
+    position: absolute;
+
     width: 172px;
     height: 300px;
-    background: rgba(0, 197, 235, 0.3);
+
+    background-color: rgba(0, 197, 235, 0.3);
     filter: blur(51.5px);
     transform: matrix(0.74, -0.63, -0.73, -0.74, 0, 0);
 
@@ -76,10 +77,12 @@
 }
 
 .gradient__bottom-left {
+    position: absolute;
+
     width: 180px;
     height: 35px;
 
-    background: rgba(0, 197, 235, 0.4);
+    background-color: rgba(0, 197, 235, 0.4);
     filter: blur(51.5px);
     transform: rotate(-149.52deg);
 
@@ -108,10 +111,12 @@
 }
 
 .gradient__bottom-right {
+    position: absolute;
+
     width: 110px;
     height: 35px;
 
-    background: rgba(125, 85, 255, 0.4);
+    background-color: rgba(125, 85, 255, 0.4);
     filter: blur(51.5px);
     transform: rotate(-149.52deg);
 
