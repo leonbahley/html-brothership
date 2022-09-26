@@ -2,6 +2,8 @@
     position: relative;
 
     background-color: #06071B;
+
+    overflow: hidden;
 }
 
 .gradient__top-left {
@@ -222,8 +224,12 @@
     border: none;
     border-radius: 5px;
 
+    &:valid {
+        border: 2px solid black;
+    }
+
     &:invalid {
-        background-color:  #f44336;
+        border: 2px solid red;
     }
 
     @media screen and (min-width: 768px) {
@@ -241,8 +247,12 @@
     border: none;
     border-radius: 5px;
 
+    &:valid {
+        border: 2px solid black;
+    }
+
     &:invalid {
-        background-color:  #f44336;
+        border: 2px solid red;
     }
 
     @media screen and (min-width: 768px) {
