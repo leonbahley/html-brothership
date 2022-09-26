@@ -1,13 +1,14 @@
 <section class="video section">
  <div class="container">
+  <div class="video__description">
     <h2 class="video__title">
       WATCH THE VIDEO
     </h2>
-    <h3 class="video__text">
+    <p class="video__text">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla
  fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. 
 Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.
-    </h3>
+    </p>
     <div class="video__svg-wrapper">
      <svg class="video__icons">
       <use href="./images/icon/sprite.svg#icon-apple">
@@ -19,12 +20,13 @@ Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus
       </use>
      </svg>
     </div>
-     <div class="video__picture-wrapper">
+    </div>
+    <div class="video__picture-container">
      <picture class="video__picture">
     <source 
     srcset="
-    ./images/video/telephone_image_mob_279.png 1x,
-    ./images/video/telephone_image_mob_558.png 2x"
+    ./images/video/telephone_image_mob_280.png 1x,
+    ./images/video/telephone_image_mob_560.png 2x"
     media="(max-width: 767px)"/>
     <source 
     srcset="
@@ -33,13 +35,23 @@ Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus
     media="(min-width: 1280px)"/>
     <source 
     srcset="
-    ./images/video/telephone_image_tab_400.png 1x,
-    ./images/video/telephone_image_tab_800.png 2x"
+    ./images/video/telephone_image_tab_401.png 1x,
+    ./images/video/telephone_image_tab_802.png 2x"
     media="(min-width: 768px)"/>
     <img 
     src= "./images/video/telephone_image_501.png"
     alt= "telephone"/>
    </picture>
+   <button class="video__button" data-modal-open></button>
+  </div>
+  <div class="video__backdrop is-hidden" data-modal>
+    <div class="video__modal">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/e-bkQiGEMuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <button class="cancel-button" data-modal-close>
+        <svg class="cancel" height="11" width="11"><use href="./images/icon/sprite.svg#icon-cross"></use></svg>
+      </button>
+    </div>
   </div>
  </div>
+
 </section>

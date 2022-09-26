@@ -1,6 +1,10 @@
 .reviewer {
   text-align: center;
-  color:var(--secondary-color-of-text)
+  color:var(--secondary-color-of-text);
+  background-position: center center;
+  background-image:  url('../images/reviews/customer_mobile_bcg.png');
+  background-size:480px ;
+  background-repeat: no-repeat;
 }
 
 .reviewer__title {
@@ -42,6 +46,7 @@
 }
 
 .reviewer__comment {
+    display: inline-block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.7;
@@ -61,4 +66,14 @@
         max-width:886px;
         
     }
+}
+.swiper-pagination {
+    bottom:0;
+    position:relative;
+    margin-top:40px;
+}
+.swiper-pagination-bullet {
+    width:6px;
+    height: 6px;
+    background-color:var(--secondary-color-of-text);
 }
