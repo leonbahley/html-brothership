@@ -1,11 +1,47 @@
 .reviewer {
   text-align: center;
   color:var(--secondary-color-of-text);
-  background-position: center center;
-  background-image:  url('../images/reviews/customer_mobile_bcg.png');
-  background-size:480px ;
-  background-repeat: no-repeat;
+  
+  
+
+  @media screen and (max-width:767px) {
+    background-image:  url(../images/reviews/mob_bcg_bot.png),url(../images/reviews/mob_bcg_top.png);
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: 480px 1043px;
+    @media(min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) { 
+        background-image:  url(../images/reviews/mob_bcg_bot@2x.png),url(../images/reviews/mob_bcg_top@2x.png);
+    }     
+    }
+@media screen and (min-width:768px) {
+    &.section {
+        padding-top:80px;
+    }
+    background-image: url(../images/reviews/tab_main_bcg.png),url(../images/reviews/tab_left_bcg.png),url(../images/reviews/tab_right_bcg.png);
+    background-position:center, center, center;
+    background-repeat:no-repeat;
+    background-size:768px 988px;
+    @media(min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) { 
+        background-image:  url(../images/reviews/tab_main_bcg@2x.png),url(../images/reviews/tab_left_bcg@2x.png),url(../images/reviews/tab_right_bcg@2x.png);
+    }     
 }
+@media screen and (min-width:1280px) {
+    background-image: url(../images/reviews/bcg-review.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:1280px;
+    @media(min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:url(../images/reviews/bcg-review@2x.png);  
+    }
+}
+} 
+
 
 .reviewer__title {
     margin-bottom:20px;
