@@ -1,5 +1,4 @@
 .modal {
-  display: none;
   padding: 48px 24px;
   background-color: #07081c;
   max-width: 280px;
@@ -7,7 +6,6 @@
   margin-right: auto;
   position: relative;
   z-index: 2;
-
   &__title {
     font-weight: 700;
     font-size: 20px;
@@ -238,4 +236,16 @@
 }
 .download-paid:checked + .download-item {
   z-index: 0;
+}
+.backdrop {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  overflow: scroll;
+  z-index: 1;
 }
