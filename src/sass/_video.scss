@@ -1,6 +1,15 @@
 .video {
     background-color: var(--secondary-background-color);
-    
+    z-index: 1;
+   
+    @media screen and (max-width:767px){
+        background-image:url("../images/video/main_left_gradient_mob.png"),
+        url("../images/video/main_right_gradient_mob.png") ; 
+        background-repeat: no-repeat;
+        background-position: center bottom -20px,center bottom -55px;
+        z-index: 0;
+
+    }
     @media screen and (max-width:1279px) {
         text-align: center;
     }
@@ -10,6 +19,7 @@
 .video > .container {
     display: flex;
     flex-direction: column;
+
     
     @media screen and (min-width:1280px) {
         flex-direction: row;
@@ -98,6 +108,8 @@
     @media screen and (max-width:767px) {
         height:258px;
     }
+
+
     @media screen and (min-width:1280px) {
         height: 282px;
     }
