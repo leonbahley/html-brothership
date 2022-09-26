@@ -100,17 +100,16 @@
   position: absolute;
   z-index: 1;
   width: 100%;
-  max-width: 422px;
+  max-width: 472px;
   height: 456px;
   top: 94;
-  background-color: rgba(0, 197, 235, 0.3);
   overflow: hidden;
 }
 
 .hero__base {
   position: absolute;
-  bottom: 44;
-  right: 2;
+  bottom: 20;
+  left: 172;
   z-index: 2;
   width: 144.56px;
   height: 70.8px;
@@ -123,13 +122,26 @@
   height: 51.93px;
   z-index: 2;
   transform: rotate(-59.04deg);
-  top: 189;
-  right: -65;
+  top: 192;
+  left: -99;
 }
 
 .hero__phone {
   position: absolute;
+  z-index: 4;
+  min-width: 422px;
+  max-height: 456px;
+  opacity: 0.5;
+  filter: drop-shadow(4px 4px 0px #252866);
+  top: -22;
+  left: 46;
+}
+.hero__phonec {
+  position: absolute;
   z-index: 3;
-  width: 395px;
-  height: 430px;
+  min-width: 422px;
+  max-height: 456px;
+  opacity: 0.5;
+  top: 0;
+  left: 52;
 }
