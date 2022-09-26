@@ -1,6 +1,38 @@
 .contacts {
     position: relative;
+
     background-color: #06071B;
+}
+
+.bg-top-left {
+    position: absolute;
+    
+    width: 198px;
+    height: 307px;
+
+    background: rgba(125, 85, 255, 0.3);
+    filter: blur(51.5px);
+    transform: matrix(0.9, 0.48, -0.41, 0.89, 0, 0);
+
+    top: 10%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+
+    @media screen and (min-width: 768px) {
+        width: 333px;
+        height: 542px;
+
+        transform: matrix(0.11, 1.01, -0.96, 0.2, 0, 0);
+
+        top: -2%;
+        right: 10%;
+        transform: translate(-50%, -50%);
+    }
+
+    @media screen and (min-width: 1280px) {
+
+    }
 }
 
 .bg-top-right {
@@ -12,27 +44,28 @@
     transform: matrix(0.74, -0.63, -0.73, -0.74, 0, 0);
 
     top: 8%;
-    left: 70%;
+    left: 55%;
     transform: translate(-50%, -50%);
     z-index: 4;
+
+    @media screen and (min-width: 768px) {
+        width: 291px;
+        height: 528px;
+
+        filter: blur(51.5px);
+        transform: matrix(-0.03, 1, 0.99, -0.09, 0, 0);
+
+        top: 0%;
+        left: 48%;
+        transform: translate(-50%, -50%);
+    }
+
+    @media screen and (min-width: 1280px) {
+
+    }
 }
 
-.bg-top-left {
-    position: absolute;
-    width: 198px;
-    height: 307px;
-
-    background: rgba(125, 85, 255, 0.3);
-    filter: blur(51.5px);
-    transform: matrix(0.9, 0.48, -0.41, 0.89, 0, 0);
-
-    top: 10%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-    z-index: 5;
-}
-
-.bg-bottom-right {
+.bg-bottom-left {
     position: absolute;
     width: 180px;
     height: 35px;
@@ -42,12 +75,27 @@
     transform: rotate(-149.52deg);
 
     top: 90%;
-    left: 20%;
+    right: 30%;
     transform: translate(-50%, -50%);
     z-index: 5;
+
+    @media screen and (min-width: 768px) {
+        width: 333px;
+        height: 542px;
+
+        transform: matrix(0.11, 1.01, -0.96, 0.2, 0, 0);
+
+        top: -2%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    @media screen and (min-width: 1280px) {
+
+    }
 }
 
-.bg-bottom-left {
+.bg-bottom-right {
     position: absolute;
     width: 110px;
     height: 35px;
@@ -60,6 +108,22 @@
     left: 55%;
     transform: translate(-50%, -50%);
     z-index: 6;
+
+    @media screen and (min-width: 768px) {
+        width: 333px;
+        height: 542px;
+
+        filter: blur(51.5px);
+        transform: matrix(0.11, 1.01, -0.96, 0.2, 0, 0);
+
+        top: -2%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+    }
+
+    @media screen and (min-width: 1280px) {
+
+    }
 }
 
 .contacts__title {
@@ -70,6 +134,8 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
+
+    z-index: 10;
 
     @media screen and (min-width: 768px) {
         padding-top: 74px;
@@ -257,6 +323,8 @@
 }
 
 .contacts--box {
+    z-index: 10;
+
     @media screen and (min-width: 1280px) {
         text-align: left;
         margin-right: 140px;
@@ -379,6 +447,8 @@
 }
 
 .footer {
+    z-index: 10;
+
     border-top: 1px solid var(--primary-color-of-text);
 
     background-color: #06071B;
