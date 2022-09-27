@@ -1,4 +1,14 @@
 .features {
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/features/Group 11_tab.png');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/features/Group 11_tab@2x.png');
+    }
+    background-size: 368px 592px;
+    background-position: 0;
+  }
   padding-top: 40px;
   padding-bottom: 40px;
   @media screen and (min-width: 768px) {
@@ -19,9 +29,7 @@
   background-size: 765px 567px, 765.76px 600.57px;
   background-position: top -100px left 50%, bottom left 50%;
   background-repeat: no-repeat;
-  @media screen and(min-width:768px) {
-    background: none;
-  }
+
   @media screen and (min-width: 1280px) {
     background-image: url('../images/features/Vector2_dxkey.png'),
       url('../images/features/Vector2_dxkey@2x.png');
@@ -37,24 +45,17 @@
   }
 }
 .features__img {
-  background-image: url('../images/features/Group\ 11_mob.png');
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url('../images/features/Group 11_mob@2x.png');
-  }
-  background-size: 280px 409px;
   background-repeat: no-repeat;
-  background-position: 50% 40px;
-  @media screen and (min-width: 768px) {
-    background-image: url('../images/features/Group 11_tab.png');
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/features/Group\ 11_mob.png');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/features/Group 11_tab@2x.png');
+      background-image: url('../images/features/Group 11_mob@2x.png');
     }
-    background-size: 368px 592px;
-    background-position: left 0;
+    background-size: 280px 409px;
+    background-repeat: no-repeat;
+    background-position: 50% 40px;
   }
   @media screen and (min-width: 1280px) {
     background-image: url('../images/features/Group 11_Dx.png');
