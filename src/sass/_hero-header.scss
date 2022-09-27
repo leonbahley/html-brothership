@@ -1,40 +1,59 @@
 .header {
-  max-width: fit-content;
-  min-width: 100%;
+  position: fixed;
+  top: 20;
+  width: 100%;
+  max-width: 480px;
   background-color: #06071b;
   background-image: linear-gradient(
     90.03deg,
     rgba(0, 197, 235, 0.3) -1.97%,
     rgba(181, 68, 254, 0.3) 89.43%
   );
-  position: absolute;
-  top: 20;
-  left: 0;
-  z-index: 1;
+  // position: absolute;
+  // top: 20;
+  // left: 0;
+  z-index: 5;
   padding: 14px 0;
   &__icon {
     width: 24px;
     height: 14px;
-    position: absolute;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
   }
   &__menu {
+    margin-left: auto;
+    margin-right: auto;
     border: none;
+    background-color: transparent;
     width: 24px;
     height: 14px;
     padding: 0;
-    position: absolute;
-    top: 24;
-    right: 50;
+    margin-left: auto;
+    // position: absolute;
+    // top: 24;
+    // right: 20;
     @media screen and (min-width: 768px) {
       display: none;
     }
   }
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
-.cont {
+.container .cont {
   position: relative;
-  margin-left: 20px;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 .logo {
+  position: relative;
+  z-index: 1;
   font-size: 28px;
   line-height: calc(34 / 28);
   color: var(--primary-color-of-text);
@@ -45,11 +64,14 @@
   background-color: #06071b;
   position: relative;
   min-height: 568px;
-  max-width: 100vw;
+  max-width: 480px;
+
   &__title {
     margin-top: 12px;
     font-size: 18px;
     line-height: calc(22 / 18);
+    margin-left: auto;
+    margin-right: auto;
   }
   &__list {
     list-style: none;
@@ -79,16 +101,28 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-
+.image-wrapper {
+  overflow: hidden;
+}
 .wrapper {
-  position: absolute;
-  top: 182px;
+  position: relative;
   z-index: 5;
+  margin-top: 142px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-grow: none;
+  padding: 0 20px;
 }
 
 .page-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
   font-size: 24px;
   line-height: calc(29 / 24);
+  margin-left: auto;
+  margin-right: auto;
 }
 .button-wrapper {
   display: flex;
@@ -108,52 +142,10 @@
 .background {
   position: absolute;
   z-index: 1;
-  width: 100%;
-  max-width: 472px;
+  width: 422px;
   height: 456px;
   top: 94;
-  left: 2vw;
   overflow: hidden;
-}
-
-.hero__base {
-  position: absolute;
-  bottom: 20;
-  left: 172;
-  z-index: 2;
-  width: 144.56px;
-  height: 70.8px;
-  transform: matrix(0.51, -0.86, -0.86, -0.51, 0, 0);
-}
-
-.hero__grade {
-  position: absolute;
-  min-width: 498.19px;
-  height: 51.93px;
-  z-index: 2;
-  transform: rotate(-59.04deg);
-  top: 192;
-  left: -99;
-}
-
-.hero__phone {
-  position: absolute;
-  z-index: 4;
-  min-width: 422px;
-  max-height: 456px;
-  opacity: 0.5;
-  filter: drop-shadow(4px 4px 0px #252866);
-  top: -22;
-  left: 46;
-}
-.hero__phonec {
-  position: absolute;
-  z-index: 3;
-  min-width: 422px;
-  max-height: 456px;
-  opacity: 0.5;
-  top: 0;
-  left: 52;
 }
 
 .header__list {
@@ -173,3 +165,67 @@
   font-size: 12px;
   line-height: calc(15 / 12);
 }
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  background-color: #06071b;
+  background-image: url(../images/hero/mob-grad.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding: 16px 21px;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.logo-mobile {
+  max-width: 139px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: calc(34 / 28);
+  text-decoration: none;
+  position: relative;
+  z-index: 4;
+  color: var(--primary-color-of-text);
+}
+.mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  align-items: center;
+}
+.mobile-menu__item {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: var(--primary-color-of-text);
+}
+
+.mobile-menu__item:hover,
+.mobile-menu__item:focus {
+  color: #fff;
+  background-image: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cross {
+  fill: #ffffff;
+  z-index: 4;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 16;
+  right: 20;
+}
+
+// .positioning {
+//   margin: 0 auto;
+// }
