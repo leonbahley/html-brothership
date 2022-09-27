@@ -1,20 +1,12 @@
-.features {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-.features__container-color {
-  @media screen and(min-width:1200px) {
-    position: relative;
-    max-width: 1200px;
-  }
-}
 .features__gradient {
+  padding-top: 100px;
+  padding-bottom: 105px;
   background-image: url('../images/features/Vector2_mobkey.png'),
-    url('../images/features/Vector1_mob.png');
+    url('../images/features/Vector2_mobkey@2x.png');
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('../images/features/Vector2_mobkey@2x.png'),
+    background-image: url('../images/features/Vector1_mob.png'),
       url('../images/features/Vector1_mob@2x.png');
   }
   background-size: 668px 567px, 627.76px 600.57px;
@@ -23,17 +15,17 @@
   @media screen and(min-width:768px) {
     background: none;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     background-image: url('../images/features/Vector2_dxkey.png'),
-      url('../images/features/Vector1_dx.png');
+      url('../images/features/Vector2_dxkey@2x.png');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/features/Vector2_dxkey@2x.png'),
+      background-image: url('../images/features/Vector1_dx.png'),
         url('../images/features/Vector1_dx@2x.png');
     }
-    background-size: 404px 253px, 1200px 823.76px;
-    background-position: right 0, left bottom -200px;
+    background-size: 604px 453px, 1280px 823.76px;
+    background-position: right 70px, left bottom -100px;
     background-repeat: no-repeat;
   }
 }
@@ -42,27 +34,27 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('../images/features/Group\ 11_mob@2x.png');
+    background-image: url('../images/features/Group 11_mob@2x.png');
   }
   background-size: 280px 409px;
   background-repeat: no-repeat;
   background-position: 50% 40px;
   @media screen and (min-width: 768px) {
-    background-image: url('../images/features/Group\ 11_tab.png');
+    background-image: url('../images/features/Group 11_tab.png');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/features/Group\ 11_tab@2x.png');
+      background-image: url('../images/features/Group 11_tab@2x.png');
     }
     background-size: 368px 592px;
     background-position: left 0;
   }
-  @media screen and (min-width: 1200px) {
-    background-image: url('../images/features/Group\ 11_Dx.png');
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/features/Group 11_Dx.png');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/features/Group\ 11_Dx@2x.png');
+      background-image: url('../images/features/Group 11_Dx@2x.png');
     }
     background-size: 396px 596px;
     background-position: 50%;
@@ -76,25 +68,23 @@
 }
 .features__main-title {
   text-align: center;
-  font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
-  color: #000000;
+  color:black;
   margin-bottom: 40px;
 }
 .features__main-text {
-  color: #000000;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   margin: 40px auto;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     max-width: 886px;
     margin: 80px auto;
   }
+  color: black;
 }
-
 .features__list {
   display: flex;
   align-items: center;
@@ -106,7 +96,7 @@
     flex-wrap: wrap;
     gap: 80px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     max-height: 600px;
     gap: 80px 452px;
     padding: 60px 0;
@@ -122,28 +112,27 @@
   @media screen and (min-width: 768px) {
     width: 278px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 260px;
   }
 }
 .features__item-title {
-  font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
-  color: #000000;
+  color:black;
 }
 .features__item-text {
   margin-left: 40px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.21;
-  color: #000000;
+  color: black;
 }
 .features__tablet {
   @media screen and (min-width: 768px) {
     margin-top: 672px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-top: 0;
   }
 }
