@@ -126,8 +126,8 @@
 }
 @media screen and (max-width: 767px) {
   .team {
-    background-position: 50% -700%, 50% 300%;
-    background-size: 767px;
+    background-position: 50% -700%, 50% 0;
+    background-size: 767px, cover;
     background-image: url('../images/team/bkg-mob-top.png'),
       url('../images/team/bkg-mob-bottom.png');
 
