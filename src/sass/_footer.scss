@@ -2,15 +2,6 @@
     background-color: #06071B;
 
     overflow: hidden;
-
-    max-width: 480px;
-    @media screen and (min-width: 768px) {
-        max-width: 768px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        max-width: 1280px;
-    }
 }
 
 .contacts__title {
