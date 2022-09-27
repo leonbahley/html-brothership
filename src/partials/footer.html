@@ -1,0 +1,71 @@
+<section class="contacts">
+
+    <h2 class="contacts__title">CONTACT US</h2>
+
+    <div class="container container--box">
+
+        <form class="form">
+            <input class="form__name" required type="text" pattern="^[A-Za-z\s]{3,33}" name="user-name" id="user-name" placeholder="Name">
+            
+            <input class="form__mail" required type="email" pattern="^([a-z0-9_\.-]+)@([a-z0-9_\.-]+)\.([a-z\.]{2,6})$" name="email" id="e-mail" placeholder="Email">
+            
+            <textarea class="form__message" name="message" id="message" rows="10" placeholder="Message"></textarea>
+            
+            <button class="form__button" type="submit">
+                <span class="form__button__text">SUBMIT</span>
+            </button>
+        </form>
+
+        <div class="contacts--box">
+
+            <h3 class="contacts__title-mini">Get in touch with us</h3>
+
+            <p class="contacts__text">Nunc urna est, tristique et varius at, pharetra nec enim. Quisque rhoncus lacus fringilla nulla sollicitudin tristique.</p>
+    
+            <div>   
+                <ul class="contacts_social"> 
+                    
+                    <li class="contacts__list list">
+                        <a class="socials-link" href="">
+                            <svg class="social-icon" width="40" height="40">
+                                <use class="social-icon__main" href="./images/icon/sprite.svg#icon-facebook"></use>
+                                <use class="social-icon__hover" href="./images/icon/sprite.svg#icon-facebook-hovered"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="contacts__list list">
+                        <a class="socials-link" href="">
+                            <svg class="social-icon" width="40" height="40">
+                                <use class="social-icon__main" href="./images/icon/sprite.svg#icon-twitter"></use>
+                                <use class="social-icon__hover" href="./images/icon/sprite.svg#icon-twitter-hovered"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="contacts__list list">
+                        <a class="socials-link" href="">
+                            <svg class="social-icon" width="40" height="40">
+                                <use class="social-icon__main" href="./images/icon/sprite.svg#icon-linkedin"></use>
+                                <use class="social-icon__hover" href="./images/icon/sprite.svg#icon-linkedin-hovered"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        
+            <address class="contacts__adress">
+                <a class="contacts__link contacts--phone" href="tel:+380950000000">+xx-xxxx-xxxx-xx</a>
+                <a class="contacts__link contacts--mail" href="mailto:goIteens@gmail.com">goIteens@gmail.com</a>
+            </address>
+
+        </div>
+    </div>
+</section>
+
+    <footer class="footer">
+        <div class="container container--footer">
+            <p class="footer__text">&#169 2019 GoIteens Template. <br class="hidden"> All Rights Reserved</p>
+        </div>    
+    </footer>
