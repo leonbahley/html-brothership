@@ -75,6 +75,9 @@
 }
 
 .team__list {
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -91,7 +94,6 @@
   }
   .team {
     padding-top: 80px;
-    padding-bottom: 35px;
   }
   .team__list {
     row-gap: 40px;
@@ -122,63 +124,46 @@
     padding-bottom: 0;
   }
 }
-
 @media screen and (max-width: 767px) {
   .team {
-    margin: 0 auto;
-    max-width: 320px;
-    background-image: url('../images/team/bkg-mob-1.png'),
-      url('../images/team/bkg-mob-2.png');
-    background-position: top center, center;
+    background-position: 50% -700%, 50% 0;
+    background-size: 767px, cover;
+    background-image: url('../images/team/bkg-mob-top.png'),
+      url('../images/team/bkg-mob-bottom.png');
 
-    @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+    @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      max-width: 320px;
-      background-image: url('../images/team/bkg-mob-1@2x.png'),
-        url('../images/team/bkg-mob-2@2x.png');
-      background-position: top center, center;
+      background-image: url('../images/team/bkg-mob-top@2x.png'),
+        url('../images/team/bkg-mob-bottom@2x.png');
     }
   }
 }
-
 @media screen and (min-width: 768px) {
   .team {
-    max-width: 768px;
-    background-image: url('../images/team/bkg-tab-01.png'),
-      url('../images/team/bkg-tab-02.png');
-    background-position: top right calc(50% - 210px),
-      center right calc(50% - 210px);
-
-    @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    background-position: right -50%, right 80%;
+    background-size: 525px;
+    background-image: url('../images/team/bkg-tab-top.png'),
+      url('../images/team/bkg-tab-bottom.png');
+    @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      max-width: 768px;
-      background-image: url('../images/team/bkg-tab-01@2x.png'),
-        url('../images/team/bkg-tab-02@2x.png');
-      background-position: top right calc(50% - 210px),
-        center right calc(50% - 210px);
+      background-image: url('../images/team/bkg-tab-top@2x.png'),
+        url('../images/team/bkg-tab-bottom@2x.png');
     }
   }
 }
-
 @media screen and (min-width: 1280px) {
   .team {
-    max-width: 1280px;
-    background-image: url('../images/team/bkg-desk1.png'),
-      url('../images/team/bkg-desk2.png');
-    background-position: top calc(-50%) right calc(50% - 369px),
-      top calc(-30%) left;
-
-    @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+    background-size: 625px;
+    background-image: url('../images/team/bkg-desk-right.png'),
+      url('../images/team/bkg-desk-left.png');
+    background-position: right 170%, 20% 80%;
+    @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      max-width: 1280px;
-      background-size: 540px, 867px;
-      background-image: url('../images/team/bkg-desk1@2x.png'),
-        url('../images/team/bkg-desk2@2x.png');
-      background-position: top calc(-50%) right calc(50% - 369px),
-        top calc(-30%) left;
+      background-image: url('../images/team/bkg-desk-right@2x.png'),
+        url('../images/team/bkg-desk-left@2x.png');
     }
   }
 }
