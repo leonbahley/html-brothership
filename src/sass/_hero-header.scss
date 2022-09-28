@@ -8,7 +8,7 @@
     rgba(0, 197, 235, 0.3) -1.97%,
     rgba(181, 68, 254, 0.3) 89.43%
   );
-  z-index: 6;
+  z-index: 100;
   padding: 14px 0;
   @media screen and (min-width: 1280px) {
     padding: 19px 0;
@@ -44,6 +44,13 @@
     font-weight: 400;
     font-size: 12px;
     line-height: calc(15 / 12);
+  }
+  .header__item a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
   }
 }
 .header-container {
@@ -192,7 +199,10 @@
 }
 
 .mobile-menu {
+  opacity: 0;
   position: fixed;
+  transform: translateX(-100%);
+  transition: transform 250ms ease-in-out, opacity 250ms ease-in-out;
   background-color: #06071b;
   background-image: url(../images/hero/mob-grad.png);
   background-repeat: no-repeat;
@@ -203,7 +213,7 @@
   margin-right: auto;
   margin-left: auto;
   padding: 16px 21px;
-  z-index: 6;
+  z-index: 101;
   flex-direction: column;
   gap: 50px;
 }
@@ -218,6 +228,7 @@
   color: var(--primary-color-of-text);
 }
 .mobile-menu__list {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   gap: 36px;
@@ -297,4 +308,9 @@
     top: 194;
     right: 55;
   }
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  transform: translateX(0);
 }
