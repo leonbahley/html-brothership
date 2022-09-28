@@ -192,7 +192,6 @@
 }
 
 .mobile-menu {
-  display: none;
   position: fixed;
   background-color: #06071b;
   background-image: url(../images/hero/mob-grad.png);
@@ -250,6 +249,8 @@
   position: absolute;
   top: 16;
   right: 20;
+  background-color: transparent;
+  border: none;
 }
 
 .mobile-menu__secret {
