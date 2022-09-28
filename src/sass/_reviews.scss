@@ -1,0 +1,115 @@
+.reviewer {
+  text-align: center;
+  color:var(--secondary-color-of-text);
+  
+  
+
+  @media screen and (max-width:767px) {
+    background-image:  url(../images/reviews/mob_bcg_bot.png),url(../images/reviews/mob_bcg_top.png);
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: 100% 1043px;
+    @media(min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) { 
+        background-image:  url(../images/reviews/mob_bcg_bot@2x.png),url(../images/reviews/mob_bcg_top@2x.png);
+    }     
+    }
+@media screen and (min-width:768px) {
+    &.section {
+        padding-top:80px;
+    }
+    background-image: url(../images/reviews/tab_main_bcg.png),url(../images/reviews/tab_left_bcg.png),url(../images/reviews/tab_right_bcg.png);
+    background-position:center, center, center;
+    background-repeat:no-repeat;
+    background-size:100% 988px;
+    @media(min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) { 
+        background-image:  url(../images/reviews/tab_main_bcg@2x.png),url(../images/reviews/tab_left_bcg@2x.png),url(../images/reviews/tab_right_bcg@2x.png);
+    }     
+}
+@media screen and (min-width:1280px) {
+    background-image: url(../images/reviews/bcg-review.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:100%;
+    @media(min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:url(../images/reviews/bcg-review@2x.png);  
+    }
+}
+} 
+
+
+.reviewer__title {
+    margin-bottom:20px;
+    font-size: 20px;
+    line-height: 1.2;
+
+    @media screen and (min-width:768px) {
+        font-size: 24px;
+    }
+}
+
+.reviewer__img-tray {
+    margin-bottom:24px;
+    
+    @media screen and (min-width:768px) {
+    margin-bottom:40px;
+    }
+   
+}
+
+.reviewer__image{
+    margin-right:auto;
+    margin-left:auto;
+}
+
+
+.reviewer__name {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-top:20px;
+    margin-bottom: 12px;
+}
+
+.reviewer__company {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.reviewer__comment {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-left: auto;
+    margin-right:auto;
+    @media screen and (max-width:767px) {
+        max-width: 280px;
+         
+    }
+    @media screen and(min-width:768px) {
+        max-width: 704px;
+        font-size:16px;
+        line-height: 1.5;
+    }
+
+    @media screen and(min-width:1280px) {
+        max-width:886px;
+        
+    }
+}
+.swiper-pagination {
+    bottom:0;
+    position:relative;
+    margin-top:40px;
+}
+.swiper-pagination-bullet {
+    width:6px;
+    height: 6px;
+    background-color:var(--secondary-color-of-text);
+}
