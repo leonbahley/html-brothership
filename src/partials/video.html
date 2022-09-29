@@ -1,62 +1,70 @@
 <section class="video section" id="video_section">
-  
- <div class="container">
-  <div class="video__description">
-    <h2 class="video__title">
-      WATCH THE VIDEO
-    </h2>
-    <p class="video__text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla
- fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. 
-Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.
-    </p>
-    <div class="video__svg-wrapper">
-      <a href="https://www.apple.com/ua/app-store/">
-     <svg class="video__icons">
-      <use href="./images/icon/sprite.svg#icon-apple">
-
-      </use>
-     </svg>
-    </a>
-    <a href="https://play.google.com/store/games?hl=ru&gl=US">
-     <svg class="video__icons">
-      <use href="./images/icon/sprite.svg#icon-android">
-      </use>
-     </svg>
-    </a>
-    </div>
+  <div class="container">
+    <div class="video__description">
+      <h2 class="video__title">WATCH THE VIDEO</h2>
+      <p class="video__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        fringilla fringilla nisl congue congue. Maecenas nec condimentum libero,
+        at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at,
+        hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.
+      </p>
+      <div class="video__svg-wrapper">
+        <a href="https://www.apple.com/ua/app-store/">
+          <svg class="video__icons">
+            <use href="./images/icon/sprite.svg#icon-apple"></use>
+          </svg>
+        </a>
+        <a href="https://play.google.com/store/games?hl=ru&gl=US">
+          <svg class="video__icons">
+            <use href="./images/icon/sprite.svg#icon-android"></use>
+          </svg>
+        </a>
+      </div>
     </div>
     <div class="video__picture-container">
-     <picture class="video__picture">
-    <source 
-    srcset="
-    ./images/video/telephone_image_mob_280.png 1x,
-    ./images/video/telephone_image_mob_560.png 2x"
-    media="(max-width: 767px)">
-    <source 
-    srcset="
-    ./images/video/telephone_image_501.png 1x,
-    ./images/video/telephone_image_1002.png 2x"
-    media="(min-width: 1280px)">
-    <source 
-    srcset="
-    ./images/video/telephone_image_tab_401.png 1x,
-    ./images/video/telephone_image_tab_802.png 2x"
-    media="(min-width: 768px)">
-    <img 
-    src= "./images/video/telephone_image_501.png"
-    alt= "telephone">
-   </picture>
-   <button class="video__button" data-modal-open></button>
-  </div>
-  <div class="video__backdrop is-hidden" data-modal>
-    <div class="video__modal">
-      <iframe class="video__iframe" width="560" height="315" src="https://www.youtube.com/embed/e-bkQiGEMuw" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <button class="video__modal-cancel-button" data-modal-close>
-        <svg class="video__svg-cancel" height="11" width="11"><use href="./images/icon/sprite.svg#icon-cross"></use></svg>
-      </button>
+      <picture class="video__picture">
+        <source
+          srcset="
+            ./images/video/telephone_image_mob_280.png 1x,
+            ./images/video/telephone_image_mob_560.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            ./images/video/telephone_image_501.png  1x,
+            ./images/video/telephone_image_1002.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/video/telephone_image_tab_401.png 1x,
+            ./images/video/telephone_image_tab_802.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img src="./images/video/telephone_image_501.png" alt="telephone" />
+      </picture>
+      <button class="video__button" data-modal-open></button>
+    </div>
+    <div class="video__backdrop is-hidden" data-modal>
+      <div class="video__modal">
+        <iframe
+          class="video__iframe"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/e-bkQiGEMuw"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <button class="video__modal-cancel-button" data-modal-close>
+          <svg class="video__svg-cancel" height="11" width="11">
+            <use href="./images/icon/sprite.svg#icon-cross"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
- </div>
-
 </section>

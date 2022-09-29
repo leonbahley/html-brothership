@@ -1,12 +1,12 @@
 // SWIPER
-
-new Swiper('.swiper', {
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-});
-
+(() => {
+  new Swiper('.swiper', {
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+})();
 //  MODAL VIDEO
 (() => {
   const refs = {
